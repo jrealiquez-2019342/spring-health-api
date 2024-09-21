@@ -1,17 +1,19 @@
 package com.realiquez.spring_health_api.service.interfaces.usuarios;
 
 import com.realiquez.spring_health_api.model.Usuario;
+import org.bson.types.ObjectId;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
+/*
 @Service
 public class UsuarioServiceImpl implements UsuarioService{
     private Map<Long, Usuario> usuarios = new HashMap<>();
-    private Long contadorId = 1L;
+    //private ObjectId contadorId = 1L;
+
 
     @Override
     public Usuario crearUsuario(Usuario usuario) {
@@ -44,3 +46,4 @@ public class UsuarioServiceImpl implements UsuarioService{
         return "Usuario con ID: " + id + " eliminado.";
     }
 }
+*/

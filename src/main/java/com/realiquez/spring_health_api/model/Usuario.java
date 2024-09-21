@@ -1,18 +1,24 @@
 package com.realiquez.spring_health_api.model;
 
+import org.bson.types.ObjectId;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
 import java.util.Objects;
 
+@Document
 public class Usuario {
 
-    private Long id;
+    @Id
+    private ObjectId id;
     private String nombre;
     private String correo;
 
-    public Long getId() {
-        return id;
+    public String getId() {
+        return id != null ? id.toHexString() : null;
     }
 
-    public void setId(Long id) {
+    public void setId(ObjectId id) {
         this.id = id;
     }
 
